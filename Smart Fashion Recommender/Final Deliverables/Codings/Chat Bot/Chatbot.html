@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>CHATBOT</title>
+       
+    </head>
+    <body background="https://dress33.s3.jp-tok.cloud-object-storage.appdomain.cloud/appFront.html">
+        <script style="width:200%;">
+            window.watsonAssistantChatOptions = {
+              integrationID: "c0816979-54c9-42be-8f22-556b4ba44449", // The ID of this integration.
+              region: "au-syd", // The region your integration is hosted in.
+              serviceInstanceID: "4c820579-5399-4e3d-a550-51286c5d7367", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
+    </body>
+</html>
